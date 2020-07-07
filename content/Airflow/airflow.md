@@ -1,12 +1,31 @@
 # Airflow
 
-Write an introduction for the topic you are covering. Think about what information does a user need to know to understand the fundamentals of the topic. Diagrams and flowcharts are a plus. 
+workflow orchestration, also able to monitoring them
 
+use for repetitive tasks, don't change on daily basis, good for ETL job orchestration, trigger Spark
 
 ## How to use 
-Outline common uses of this topic, focusing on real life deployments and examples. Link to articles and videos to provide more information.
+Concepts you need to know for sure:
+- Scheduler / Executor
+    - DAG: start_date / shedule_interval
+    - Task Create → Queue
+        - sequential: one by one, for debug and testing
+        - local: concurrent, vertically, single point failure
+        - celery: dispatch to woker, recommend: maintain infrastructure
+        - kubernetes:L: allow run task using kubernetes - elastic to workload, avoid wasting resources
+- Webserver: UI dashboard
+    - DAGs View / DAG View /  Tree Biew / Task Dualation / Gantt View / Code View
+    
+- DAGs:
+    - start_data/dag_id/schedule_interval/max_active_runs/catch_up
 
-Bonus points for making it Insight specific.
+- Plugin:
+- Operator / Hooks / sensors:
+    - operator: excute work as a step in a workflow; sensor, when a creatia is met
+    - hook: interface to external platforms and services, sensor, special type of operator, monitering events poke function
+- XCom: cross-communication between tasks and operators to exchange info
+    - push / pull to a database
+- variables: key vaule store in airflow, query from database
 
 
 ## Resources 
@@ -20,8 +39,7 @@ Example:
 
 
 ## Pain Points 
-Identify current problems and paint points surround this topic / tool. What problems are people looking to solve around or with this topic/tool?
-
+The worst part of Airflow
 Example:
 - **Something painful about this topic**
 This is really annoying when it happens.  The reason for it is people need to write better code.  In order to get around it, write better code.
