@@ -29,20 +29,15 @@ Concepts you need to know for sure:
 
 
 ## Resources 
-- Everyone has to start somewhere, provide a short blurb for ANY turorials you found helpful, link to the tutorial, and any connected Codebases. 
-- Youtube videos, Important documentation, etc.
-- Please don't include out of date / bad resources.  This should be a best of list with
 
-Example:
-- [Some really awesome tutorial](https://towardsdatascience.com/getting-started-with-apache-airflow-df1aa77d7b1b)
-    - This tutorial is about XYZ...
+https://kubernetes.io/blog/2018/06/28/airflow-on-kubernetes-part-1-a-different-kind-of-operator/
+https://prabhatsharma.in/blog/installing-aiflow-on-kubernetes/
+https://airflow.apache.org/docs/stable/concepts.html
 
 
 ## Pain Points 
-The worst part of Airflow
-Example:
-- **Something painful about this topic**
-This is really annoying when it happens.  The reason for it is people need to write better code.  In order to get around it, write better code.
+The worst part of Airflow is the environment setup, the 
+
 
 
 
