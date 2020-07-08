@@ -14,8 +14,13 @@ Concepts you need to know for sure:
         - celery: dispatch to woker, recommend: maintain infrastructure
         - kubernetes:L: allow run task using kubernetes - elastic to workload, avoid wasting resources
 - Webserver: UI dashboard
+    ![](images/airflow-web-1.png)
     - DAGs View / DAG View /  Tree Biew / Task Dualation / Gantt View / Code View
-    
+    ![](images/airflow-web-3.png)
+    ![](images/airflow-web-2.png)
+- Flower UI: Monitoring the worker node 
+    ![](images/flower-1.png)
+    ![](images/flower-2.png)
 - DAGs:
     - start_data/dag_id/schedule_interval/max_active_runs/catch_up
 
@@ -36,7 +41,11 @@ https://airflow.apache.org/docs/stable/concepts.html
 
 
 ## Pain Points 
-The worst part of Airflow is the environment setup, the 
+The worst part of Airflow is the environment setup, the airflow is written by python, and need a lot
+of dependency library, but since the airflow is still being developed, it is so easy to get one of the 
+dependency library out-of-date. Thus people always use docker image to run airflow.
+
+This issue is extremly important when running on kubernetes
 
 
 
